@@ -7,7 +7,8 @@ trigger:
 - master
  
 variables:
- 
+  pool:
+   name: Local_Pool_1
   # Azure Resource Manager connection created during pipeline creation
   azureSubscription: 'test-bc-svc'
   
@@ -22,7 +23,7 @@ variables:
  
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
-  name: Local_Pool_1
+  
   
 stages:
 - stage: Archive
