@@ -22,6 +22,7 @@ variables:
  
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
+  name: Local_Pool_1
   
 stages:
 - stage: Archive
