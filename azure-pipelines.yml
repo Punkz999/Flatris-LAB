@@ -5,10 +5,12 @@
  
 trigger:
 - master
- 
+
+pool:
+  name: Local_Pool_1
+
 variables:
-  pool:
-   name: Local_Pool_1
+
   # Azure Resource Manager connection created during pipeline creation
   azureSubscription: 'test-bc-svc'
   
