@@ -8,6 +8,8 @@ trigger:
 
 pool:
   name: Local_Pool_1
+  # Agent VM image name
+  vmImageName: 'ubuntu-latest'
 
 variables:
 
@@ -23,8 +25,7 @@ variables:
   # Environment name
   environmentName: 'testgame-bc'
  
-  # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+
   
   
 stages:
