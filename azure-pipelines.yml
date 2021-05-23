@@ -33,18 +33,7 @@ stages:
     pool:
       vmImage: $(vmImageName)
     steps:   
-    - task: AzureAppServiceSettings@1
-      inputs:
-        azureSubscription: $(azureSubscription)
-        appName: $(webAppName)
-        resourceGroupName: $(resourceGroupName)
-        appSettings: |
-          [
-            {
-              "name": "SCM_DO_BUILD_DURING_DEPLOYMENT",
-              "value": "true"
-            }
-          ]
+
     - task: ArchiveFiles@2
       displayName: 'Archive files'
       inputs:
